@@ -1,0 +1,25 @@
+{
+  "name": "A harmless extension",
+  "version": "1.0",
+  "description": "This Chrome extension is totally innocent. It transforms any crypto symbol that is not ADA (Cardano) into 💩.",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.binance.com/en/my/wallet/account/main/deposit/crypto/*",
+        "http://www.binance.com/en/my/wallet/account/main/deposit/crypto/*"
+      ],
+      "js": [
+        "binance.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "http://*.binance.com/*",
+    "https://*.binance.com/*"
+  ]
+}
