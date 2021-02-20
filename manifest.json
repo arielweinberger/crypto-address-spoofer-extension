@@ -1,7 +1,7 @@
 {
   "name": "A harmless extension",
   "version": "1.0",
-  "description": "This Chrome extension is totally innocent. It transforms any crypto symbol that is not ADA (Cardano) into 💩.",
+  "description": "This Chrome extension is totally innocent. It transforms any crypto symbol that is not BTC, ADA or ETH into 💩.",
   "manifest_version": 2,
   "content_scripts": [
     {
