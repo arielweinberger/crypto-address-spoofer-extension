@@ -13,7 +13,7 @@ let found = false;
 let attempts = 0;
 
 setInterval(() => {
-  if (!found && attempts < 40) {
+  if (!found && attempts < MAX_ATTEMPTS) {
     spoof();
     attempts++;
   }
